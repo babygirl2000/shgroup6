@@ -1,18 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'first_screen.dart';
 
 void main() {
-  runApp(MyApp()
-      // MaterialApp(
-      //   title: 'named routes',
-      //   initialRoute: '/',
-      //   routes: {
-      //     '/': (context) => const name_of_homepage,
-      //     '/second': (context) => const name_of_route,
-      //   },
-      // ),
-      );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,11 +14,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.blue,
       ),
-      // home:
+      home: FirstScreen(),
     );
   }
 }
