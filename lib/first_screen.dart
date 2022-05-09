@@ -9,6 +9,12 @@ class FirstScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue,
+      body: Center(
+        child: Text(
+          'First Screen',
+          style: TextStyle(fontSize: 25, color: Colors.white),
+        ),
+      ),
     );
   }
 }
